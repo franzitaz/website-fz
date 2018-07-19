@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<!-- <meta name="viewport" content="initial-scale=1.0"> -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Portfolio - Produtora Freelancer Francielle Zucolota</title>
+		
+		<!-- css -->
+		<link type="text/css" href="index.css" rel="stylesheet">
+		<link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+
+		<!-- fonts -->
+		<link href="https://fonts.googleapis.com/css?family=Kreon:200,300,400" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Raleway:200,300,400" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Pompiere" rel="stylesheet">
+
+	</head>
+	
+	<body class="background-color">
+		<!-- stripes -->
+		<div class="stripe top-stripe"></div>
+		<div class="stripe right-stripe"></div>
+		<div class="stripe bottom-stripe"></div>
+		<div class="stripe left-stripe"></div>
+
+		<!-- Facebook -->
+		<a href="https://www.facebook.com/fzucolota" target="_blank" class="facebook">
+			<svg width="11px" height="19px" viewBox="0 0 11 19" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+			  <g stroke="none" stroke-width="1" fill="#fff" fill-rule="evenodd">
+				<g transform="translate(-1143.000000, -35.000000)" stroke="#FFFFFF">
+				  <path d="M1150.12787,53.0005634 L1150.12787,45.2463807 L1152.90999,45.2463807 L1153.32737,42.2235344 L1150.12787,42.2235344 L1150.12787,40.293904 C1150.12787,39.4189727 1150.38661,38.8227576 1151.72975,38.8227576 L1153.44,38.8220935 L1153.44,36.1183399 C1153.14423,36.0824129 1152.12899,36 1150.94733,36 C1148.47983,36 1146.79054,37.4084568 1146.79054,39.9945015 L1146.79054,42.2235344 L1144,42.2235344 L1144,45.2463807 L1146.79054,45.2463807 L1146.79054,53.0005634 L1150.12787,53.0005634 Z" id="facebook-icon" style="stroke-dashoffset: 1e-05; stroke-dasharray: none;"></path>
+				</g>
+			  </g>
+			</svg>
+		  </a>
+
+		<!-- the whole thing -->
+		<div class="over-flow">
+			<div class="box-title">
+				<img class="title" src="imgs/logo-title2.png"/>
+			</div>
+
+			<!-- down-arrow -->
+			<a class="smoothScroll"  href="#more">
+				<img class="down-arrow hvr-hang" src="imgs/down-arrow2.png">
+			</a>
+
+			<!--content-->
+			<div id="more" class="content">
+				<!-- WebDesign -->
+					<div class="content1-webdesign">
+						<div style="margin-bottom: 15px;">
+							<span class="character">.</span><strong>WebDesign </strong><span class="character">{</span><br>
+						</div>
+							<div class="content1-phrase">
+								Onde: ciência e arte <br>
+								<span class="break-all-style">se encontram</span><span class="character">;</span>
+							</div>
+							<span class="character" style="margin-left: 20px">}</span>
+					</div>
+
+					<div class="box-content-1"
+							data-aos="fade-left"
+							data-aos-offset="400"
+							data-aos-duration="1000"
+							data-aos-easing="ease-in-ease">
+						<img class="img-web" src="imgs/4-responsive-design.png">
+					</div>
+
+					<!-- Image Manipulation -->
+					<div class="content2">
+						<div>
+							<strong>- Manipulação - </strong>
+						</div>
+						<div class="content2-phrase">
+							<i>de Imagens</i>
+						</div>
+					</div>
+	
+					<div class="box-content-2"
+						data-aos="fade-right"
+						data-aos-offset="200"
+						data-aos-duration="1000"
+						data-aos-easing="ease-in-ease">
+						
+						<img class="img-web" src="imgs/4-responsive-design.png">
+					</div>
+
+					<!-- Video Edition -->
+					<div class="content3">
+						<div>
+							<strong>- Edições de -</strong>
+						</div>
+						<div class="content3-phrase">
+							<i>Vídeos</i>
+						</div>
+					</div>
+	
+					<div class="box-content-3"
+						data-aos="fade-left"
+						data-aos-offset="250"
+						data-aos-duration="1000"
+						data-aos-easing="ease-in-ease">
+						
+						<img class="img-web" src="imgs/4-responsive-design.png">
+					</div>
+			</div>
+		
+		</div>
+
+		<!-- <div class="footer">
+			© 2018 Produtora FZ - Todos os direitos reservados.
+		</div> -->
+
+		<script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+
+		<script>
+            AOS.init();
+		</script>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<script>
+            $(function() {
+                // This will select everything with the class smoothScroll
+                // This should prevent problems with carousel, scrollspy, etc...
+                $('.smoothScroll').click(function() {
+                    if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+                        var target = $(this.hash);
+                        target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                        if (target.length) {
+                            $('html,body').animate({
+                                scrollTop: target.offset().top
+                            }, 2000); // The number here represents the speed of the scroll in milliseconds
+                            return false;
+                        }
+                    }
+                });
+            });
+
+            // Change the speed to whatever you want
+            // Personally i think 1000 is too much
+            // Try 800 or below, it seems not too much but it will make a difference
+		</script>
+		
+	</body>
+	
+<footer> 
+	<p class="footer-text">© 2018 Produtora FZ - Todos os direitos reservados.</p>
+</footer>
+
+</html>
